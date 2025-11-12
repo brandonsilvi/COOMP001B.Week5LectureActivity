@@ -7,20 +7,74 @@
     </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+     <style>
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    header {
+      color: yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+      line-height: 2;
+    }
+
+    header, h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        word-wrap: break-word;
+    }
+
+    header {
+      height: 64px;
+      background-color: #007bff;
+    }
+
+    footer {
+     color: rgb(53, 53, 41);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+      background-color: aqua;
+    }
+
+    main {
+      background-color: darkolivegreen;
+      padding: 20px;
+    }
+
+    .nested > div {
+      background-color: greenyellow; 
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      border: 2px solid black
+    }
+
+  </style>
+
 </head>
 <body>
-    <header><h1>Welcome to my Grid Demo</h1></header>
-<main>
-    <nav>Navigation</nav>
-
-    <section>Main Content</section>
-
-    <aside>Sidebar</aside>
-    
-  </main>
+    <header><h1>Welcome to my Grid Demo this is the bootstrap page</h1></header>
+<main class="container-fluid">
+    <div class="row nested">
+    <div class="col-md-3">Navigation</div>
+    <div class="col-md-6">Main Content</div>
+    <div class="col-md-3">Sidebar</div>
+    </div>
+</main>
 
   <footer>
     <p>Footer</p>
+    <br>
+    <a href="index.html" rel="home page">
+    <button>click here for home page</button>
+    </a>    
   </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
